@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+:root {
+    --cor1: #000000;
+    --cor2: #ecd6c4;
+    --cor3: #fff2e7;
+    --cor4: #2f2325;
+    --font-titulo: 'Righteous', cursive;
+    --font-texto: 'Sarala', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2f2325 16.62%, #8E5D52 85.61%);
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+}
+
+.cabeçalho-imagem {
+    width: 90px;
+    height: 90px;
+}
+
+.cabeçalho-menu {
+    display: flex;
+    gap: 40px;
+}
+.cabeçalho-menu-item {
+    color: var(--cor3);
+    font: var(--font-texto);
+    font-size: 1.5em;
+}
+
+.cabeçalho-menu-item:hover {
+    color: var(--cor4);
+}
+
+.conteudo {
+    margin-bottom: 48px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.titulo-primario {
+    font: var(--font-titulo);
+    color: var(--cor3);
+    font-size: 70px;
+}
+
+.subtitulo {
+    font: var(--font-texto);
+    font-size: 30px;
+    color: var(--cor2);
+}
+
+.butao {
+    background: var(--cor2);
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.747);
+    font-size: 20px;
+}
+.butao:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.conteudo-imagem {
+    width: 430px;
+    height: 430px;
+}
+
+.conteudo-segundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.titulo-segundario {
+    color: var(--cor3);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 45px;
+    border-top: 1px solid rgba(255, 255, 255, 0.336);
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 30px;
+    color: var(--cor2);
+}
+
+.lista-item {
+    font: var(--font-texto);
+    font-weight: 400;
+}
+
+.rodape {
+    padding: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.336);
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
